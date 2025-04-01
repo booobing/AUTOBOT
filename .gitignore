@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+.env
+
+dev-env
+
+.vscode
+
+faiss_index
+
+embeddings.pkl
+
+node_modules
