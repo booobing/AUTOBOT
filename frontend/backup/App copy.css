@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 15px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-section,
+.generate-section,
+.response-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 16px;
+  -webkit-appearance: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: 44px;
+  margin: 8px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff0000;
+  padding: 10px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.file-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.response-content {
+  text-align: left;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.cost-info {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 5px;
+  }
+  
+  .input-group {
+    padding: 10px;
+  }
+  
+  .response-content {
+    font-size: 14px;
+  }
+}
