@@ -1,0 +1,12 @@
+project/
+├── backend/
+│   ├── main.py
+│   └── text_generation.py
+└── frontend/
+    ├── public/
+    ├── src/
+    │   ├── App.js
+    │   ├── App.css
+    │   └── index.js
+    ├── package.json
+    └── README.md
